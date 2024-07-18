@@ -26,7 +26,7 @@ exports.getPlaylist = catchAsync(async (req, res, next) => {
 
 exports.getTrack = catchAsync(async (req, res, next) => {
     // 1) Get the data, for the requested tour (including reviews and guides)
-    const tour = await Tour.findOne({ slug: req.params.slug }).populate({
+    const tour = await Track.findOne({ slug: req.params.slug }).populate({
         path: 'reviews',
         fields: 'review rating user'
     });
