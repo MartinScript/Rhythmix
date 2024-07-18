@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./asset/css/landing-style.css" />
+        <link rel="stylesheet" href="./public/asset/css/landing-style.css" />
         <title>Document</title>
     </head>
     <body>
@@ -30,7 +30,8 @@
             </nav>
             <div class="hero-text-box">
                 <h1>Feel the beat.<br>Live the moment.</h1>
-                <a class="btn btn-full js--scroll-to-plans" href="#">Start
+                <a class="btn btn-full js--scroll-to-plans"
+                    href="./public/index.html">Start
                     Vibing</a>
                 <a class="btn btn-ghost js--scroll-to-start"
                     href="features">Know More</a>
@@ -40,21 +41,25 @@
         <section id="features">
             <h2>Key Features</h2>
             <div class="feature">
-                <img src="./asset/img/young-handsome-happy-surprised-hipster-man-listening-music.jpg" alt="High quality music">
-                
-            </figure>
+                <img
+                    src="./asset/img/young-handsome-happy-surprised-hipster-man-listening-music.jpg"
+                    alt="High quality music">
+
                 <h3>High-Quality Streaming</h3>
                 <p>Experience music in high fidelity with our superior streaming
                     quality.</p>
             </div>
             <div class="feature">
-                <img src="feature2.jpg" alt="Feature 2 Image">
+                <img src="./asset/img/portrait-person-with-wavy-texture.jpg"
+                    alt="Feature 2 Image">
                 <h3>Personalized Playlists</h3>
                 <p>Create and enjoy playlists curated just for you based on your
                     listening habits.</p>
             </div>
             <div class="feature">
-                <img src="feature3.jpg" alt="Feature 3 Image">
+                <img
+                    src="./asset/img/live-music-listen-entertainment-online-concept.jpg"
+                    alt="Feature 3 Image">
                 <h3>Offline Mode</h3>
                 <p>Download your favorite tracks and listen to them anytime,
                     anywhere.</p>
@@ -63,7 +68,7 @@
         <section id="about">
             <h2>About This Project</h2>
             <p>
-                This music streaming website was inspired our love for music
+                Rhythmix was inspired our love for music
                 and the desire to create a seamless listening experience.
                 The journey began during our time at Holberton School, where we
                 developed this project as part of our portfolio.
@@ -77,23 +82,56 @@
             <h2>Meet the Team</h2>
             <div class="team">
                 <div class="team-card">
+                    <img src="./asset/img/Barbra.jpg"
+                        alt="Team Member 1 Image" class="card__picture">
+                    <p>Barbra </p>
+                    <div class="card__footer">
+                        <a
+                            href="https://www.linkedin.com/in/barbra-wasiwo-a3443a220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="btn btn-ghost ">Linkedin</a>
+
+                        <a href="https://github.com/barbzt30"
+                            target="_blank"
+                            class="btn btn-ghost ">GitHub</a>
+                        <a href="#"
+                            target="_blank"
+                            class="btn btn-ghost ">Twitter</a>
+                    </div>
+                </div>
+                <div class="team-card">
                     <img src="./asset/img/Passport.png"
                         alt="Team Member 1 Image" class="card__picture">
                     <p>Martins </p>
                     <div class="card__footer">
-                        <a href="https://linkedin.com/in/martinscript"
+                        <a href="https://www.linkedin.com/in/martins-ojo/"
                             target="_blank" class="btn btn-ghost ">Linkedin</a>
 
                         <a href="https://github.com/MartinScript"
                             target="_blank"
                             class="btn btn-ghost ">GitHub</a>
-                        <a href="https://twitter.com/MartinScript"
+                        <a href="https://x.com/OlasunkanmiOjo_"
                             target="_blank"
                             class="btn btn-ghost ">Twitter</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer__logo">
+            <img
+                src="./asset/img/rhythmix-high-resolution-logo-black-transparent.png"
+                alt="Natours logo" />
+        </div>
+        <ul class="footer__nav">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Meet the Team</a></li>
+            <li><a href="#plans">Sign up</a></li>
+        </ul>
+        <p class="footer__copyright">
+            &copy; by Martins Ojo. All rights reserved.
+        </p>
         <script src="./asset/js/script.js"></script>
     </body>
 </html>

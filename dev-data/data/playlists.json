@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Chill Vibes",
+    "description": "A collection of relaxing tracks to unwind.",
+    "user": "60d5ec49b5eae12d88c699fa",
+    "tracks": ["60d5ec49b5eae12d88c699fd", "60d5ec49b5eae12d88c699fe"]
+  },
+  {
+    "name": "Workout Mix",
+    "description": "Upbeat tracks to keep you moving during workouts.",
+    "user": "60d5ec49b5eae12d88c699fb",
+    "tracks": ["60d5ec49b5eae12d88c699ff", "60d5ec49b5eae12d88c69a00"]
+  },
+  {
+    "name": "Party Hits",
+    "description": "Top hits to get the party started.",
+    "user": "60d5ec49b5eae12d88c699fc",
+    "tracks": ["60d5ec49b5eae12d88c69a01", "60d5ec49b5eae12d88c69a02"]
+  }
+]

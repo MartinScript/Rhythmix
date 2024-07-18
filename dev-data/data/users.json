@@ -1,0 +1,35 @@
+[
+  {
+    "username": "artisteOne",
+    "email": "artisteone@example.com",
+    "role": "artiste",
+    "subscription": "60c72b2f9b1e8a5f8c3e4d2c",
+    "password": "$2a$12$5s9.eO8A5Rmq5y.fV8UyXO7HVw1Jg/5ss.j.PU4JotgZ2FZlIR0Ja",
+    "passwordConfirm": "$2a$12$5s9.eO8A5Rmq5y.fV8UyXO7HVw1Jg/5ss.j.PU4JotgZ2FZlIR0Ja",
+    "passwordChangedAt": "2023-06-15T00:00:00.000Z",
+    "photo": "artisteOne.jpg",
+    "active": true
+  },
+  {
+    "username": "listenerOne",
+    "email": "listenerone@example.com",
+    "role": "listener",
+    "subscription": "60c72b2f9b1e8a5f8c3e4d2d",
+    "password": "$2a$12$TfqHJEmn4yxH5/U/VQdr0O8A9S7hQHV7d2A9YgQW5s0FV.h6J2Erq",
+    "passwordConfirm": "$2a$12$TfqHJEmn4yxH5/U/VQdr0O8A9S7hQHV7d2A9YgQW5s0FV.h6J2Erq",
+    "passwordChangedAt": "2023-06-15T00:00:00.000Z",
+    "photo": "listenerOne.jpg",
+    "active": true
+  },
+  {
+    "username": "adminUser",
+    "email": "admin@example.com",
+    "role": "admin",
+    "subscription": "60c72b2f9b1e8a5f8c3e4d2e",
+    "password": "$2a$12$TfqHJEmn4yxH5/U/VQdr0O8A9S7hQHV7d2A9YgQW5s0FV.h6J2Erq",
+    "passwordConfirm": "$2a$12$TfqHJEmn4yxH5/U/VQdr0O8A9S7hQHV7d2A9YgQW5s0FV.h6J2Erq",
+    "passwordChangedAt": "2023-06-15T00:00:00.000Z",
+    "photo": "adminUser.jpg",
+    "active": true
+  }
+]

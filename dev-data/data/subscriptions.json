@@ -1,0 +1,16 @@
+[
+  {
+    "category": "Premium",
+    "user": "60d5ec49b5eae12d88c699fa",
+    "price": 9.99,
+    "paid": true,
+    "duration": 30
+  },
+  {
+    "category": "Free",
+    "user": "60d5ec49b5eae12d88c699fb",
+    "price": 0,
+    "paid": false,
+    "duration": 30
+  }
+]
