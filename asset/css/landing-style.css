@@ -17,6 +17,9 @@ body {
   font-size: 20px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .clearfix {
@@ -73,7 +76,7 @@ h2 {
 }
 
 h3 {
-  font-size: 110%;
+  font-size: 100%;
   margin-bottom: 15px;
 }
 
@@ -141,10 +144,9 @@ a:active {
 
 /* ----- BUTTONS ----- */
 .btn:link,
-.btn:visited,
-input[type='submit'] {
+.btn:visited {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 7px 15px;
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
@@ -153,8 +155,7 @@ input[type='submit'] {
 }
 
 .btn-full:link,
-.btn-full:visited,
-input[type='submit'] {
+.btn-full:visited {
   background-color: #f7f7f7;
   border: 1px solid #000;
   color: #000;
@@ -201,21 +202,23 @@ header {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .hero-text-box {
   position: absolute;
-  width: 1140px;
+  width: 100%;
   top: 50%;
   left: 50%;
+  padding-left: 10px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .logo {
-  height: 70px;
-  width: auto;
+  height: auto;
+  width: 20%;
   float: left;
   margin-top: 20px;
   margin-left: 10px;
@@ -233,12 +236,17 @@ header {
 .main-nav {
   float: right;
   list-style: none;
-  margin-top: 55px;
+  margin-top: 40px;
   margin-right: 10px;
+  width: 60%;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .main-nav li {
-  display: inline-block;
+  display: flex;
   margin-left: 40px;
 }
 
@@ -248,8 +256,8 @@ header {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 90%;
-  word-spacing: 2px;
+  font-size: 80%;
+  word-spacing: 1px;
   border-bottom: 2px solid transparent;
   -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
@@ -308,14 +316,14 @@ header {
 }
 
 p {
-  font-size: 1.2em;
-  margin: 20px 0;
+  font-size: 1.2rem;
+  margin: 5px 0;
 }
 
 /* Features */
 
 #features {
-  padding: 50px 20px;
+  width: 100%;
   background-color: #f8f9fa;
 }
 
@@ -364,6 +372,7 @@ p {
 /* Team */
 #team {
   padding: 50px 20px;
+  width: 100%;
   background-color: #f8f9fa;
 }
 
@@ -371,6 +380,15 @@ p {
   text-align: center;
   display: flex;
   justify-content: space-around;
+}
+
+@media only screen and (max-width: 50em) {
+  .team {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .team-card {
@@ -402,6 +420,10 @@ p {
   object-fit: cover;
 }
 
+.team-card span {
+  margin-bottom: 5px;
+}
+
 .card__footer {
   width: 15rem;
   display: flex;
@@ -411,7 +433,7 @@ p {
 }
 
 .card__footer > a:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .card__footer img {
@@ -428,6 +450,7 @@ p {
 /*Footer*/
 .footer {
   background-color: #f7f7f7;
+  width: 100%;
   padding: 6rem 4rem 3rem 4rem;
   font-size: 1rem;
   display: grid;
