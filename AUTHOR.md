@@ -16,7 +16,7 @@
 
 **GitHub:** [Barbzt30](https://github.com/barbzt30)
 
-**LinkedIn:** [Barbra Wasiwo](https://www.linkedin.com/in/barbra-wasiwo/)
+**LinkedIn:** [Barbra Wasiwo](https://www.linkedin.com/in/barbra-wasiwo-a3443a220)
 
 **Email:** b.wasiwo.bw@gmail.com
 
