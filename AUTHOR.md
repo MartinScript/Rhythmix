@@ -26,6 +26,6 @@
 
 **GitHub:** [Val-Ster](https://github.com/Val-Ster)
 
-**LinkedIn:** [Valerie Igbokwe](https://www.linkedin.com/in/valerie-igbokwe/)
+**LinkedIn:** [Valerie Igbokwe](https://www.linkedin.com/in/valerie-igbokwe-a92035279?)
 
 **Email:** vster310@gmail.com
