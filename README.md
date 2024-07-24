@@ -23,15 +23,14 @@ Rhythmix is designed to provide users with an immersive music streaming experien
 
 ## Features
 
-- User Authentication (Signup, Login, Logout)
-- Role-based Access Control (Listener, Artist, Admin)
-- Audio File Upload and Management
-- Track and Album Creation
-- Playlist Management
-- Subscriptions and Payments
-- Random Data Generation for Testing
-- Playing Music with a Play Button
-- Responsive Design and User-Friendly Interface
+- User authentication (signup, login, logout)
+- Create, read, update, and delete tracks
+- Create and manage playlists
+- Album creation and management
+- Subscription plans for users
+- Secure handling of user data
+- Data sanitization and security measures
+- Rate limiting to prevent abuse
 
 ## Technologies Used
 
@@ -39,8 +38,7 @@ Rhythmix is designed to provide users with an immersive music streaming experien
 - **Frontend**: Pug (HTML Templating), CSS, JavaScript
 - **Authentication**: JSON Web Tokens (JWT)
 - **Payments**: Stripe API
-- **Testing**: Jest
-- **Deployment**: Heroku
+- **Test Data**: Faker.js
 - **Bundler**: Parcel
 
 ## Installation
