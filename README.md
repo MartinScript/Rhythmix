@@ -37,6 +37,7 @@ Rhythmix is designed to provide users with an immersive music streaming experien
 - **Backend**: Node.js, Express, MongoDB, Mongoose
 - **Frontend**: Pug (HTML Templating), CSS, JavaScript
 - **Authentication**: JSON Web Tokens (JWT)
+- **Security**: Helmet, express-mongo-sanitize xss-clean, cookie-parser
 - **Payments**: Stripe API
 - **Test Data**: Faker.js
 - **Bundler**: Parcel
