@@ -20,3 +20,12 @@
 
 **Email:** b.wasiwo.bw@gmail.com
 
+# Valerie Igbokwe
+
+**Full Name:** Igbokwe Valerie Esther
+
+**GitHub:** [Val-Ster](https://github.com/Val-Ster)
+
+**LinkedIn:** [Valerie Igbokwe](https://www.linkedin.com/in/valerie-igbokwe/)
+
+**Email:** vster310@gmail.com
