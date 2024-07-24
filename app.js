@@ -16,6 +16,7 @@ const albumRouter = require('./routes/albumRoutes');
 const playlistRouter = require('./routes/playlistRoutes');
 const subscriptionRouter = require('./routes/subscriptionRoutes');
 const userRouter = require('./routes/userRoutes');
+const viewRouter = require('./routes/viewRoutes');
 
 
 //using third party middleware
@@ -103,7 +104,7 @@ app.use((req, res, next) => {
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 //ROUTERS
-// app.use('/', viewRouter);
+app.use('/', viewRouter);
 app.use('/api/v1/tracks', trackRouter);
 app.use('/api/v1/playlists', playlistRouter);
 app.use('/api/v1/albums', albumRouter);

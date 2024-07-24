@@ -1,0 +1,134 @@
+extends base
+
+block index
+    .login.modal.hidden
+        button.close-modal &times;
+        h2.heading-secondary.ma-bt-lg Log into your account
+        form.form.form--login
+            .form__group
+                label.form__label(for='email') Email address
+                input#email.form__input(type='email', placeholder='you@example.com', required)
+            .form__group.ma-bt-md
+                label.form__label(for='password') Password
+                input#password.form__input(type='password', placeholder='••••••••', required, minlength='8')
+            .form__group
+                button(type="submit").btn.btn-full Login
+    .overlay.hidden
+    header
+        .menu_side
+            .logo
+                img(src='/img/rhythmix-high-resolution-logo-black-transparent.png' alt='Rhythmix Logo')
+            h1 Playlists
+            .playlist
+            if user
+                - const userPlaylists = playlists ? playlists.filter(playlist => playlist.user._id.toString() === user._id.toString()) : [];
+                each playlist in userPlaylists
+                    h4
+                    span
+                    i.bi.bi-play-circle= playlist.name
+                
+
+            .menu_song
+                each track, i in tracks
+                    li.song_item
+                        span= `${i + 1}`
+                        img(src=`${track.trackImage}`)
+                        h5= track.title
+                            .subtitle= track.artiste.username
+                        i#1.bi.bi-play-circle
+        .song_side
+            nav
+                ul
+                    li
+                        | Discover
+                        span
+                    li MY LIBRARY
+                    li PODCAST
+                .search
+                    i.bi.bi-search
+                    input(type='text' placeholder='Search Rhythmix')
+                if user
+                    .user
+                        img(src=`${user.photo}` alt='username')
+                        span#dropdown_btn= user.username
+                        ul.dropdown
+                            li
+                                a(href='#')
+                                    i.bi.bi-person-fill
+                                    | Profile
+                            li
+                                a(href='#')
+                                    i.bi.bi-gear-fill
+                                    | Setting
+                            li
+                                .div
+                                    i.bi.bi-box-arrow-left#logout
+                                    | Log
+                                    |                                     out
+                else 
+                    .user
+                        button.btn.btn-full#login Login 
+            .content
+                h1 Burna Boy-Last Last
+                p
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Error culpa exercitationem.
+                    br
+                    |                         Odio nemo laudantium similique cupiditate non nulla
+                    |                         recusandae id odit iste! Laboriosam facilis animi quidem
+                    |                         hic ex ullam sint.
+                .buttons
+                    button.btn.btn-ghost Add to Library
+                    button.btn.btn-full Play Now
+            .popular_song
+                .heading
+                    h4 Popular Songs
+                    .btn_s
+                        i#left_scroll.bi.bi-arrow-left-short
+                        i#right_scroll.bi.bi-arrow-right-short
+                .popular_song-list
+                    each track in tracks
+                        li.song_item
+                            .cover_image
+                                img(src=`${track.trackImage}` alt='track name')
+                                i#7.bi.bi-play-circle
+                            h5= track.title
+                                .subtitle= track.artiste.username
+                 
+            .popular_artists
+                .heading
+                    h4 Popular Artists
+                    .btn_s
+                        i#left_scrolls.bi.bi-arrow-left-short
+                        i#right_scrolls.bi.bi-arrow-right-short
+                .item
+                    each artiste in artistes
+                        li
+                            img(src=`${artiste.photo}`)
+        .master_play
+            .wave
+                .wave1
+                .wave1
+                .wave1
+            img(src='/img/romantic-8840813_1280.jpg')
+            h5
+                | On my way 
+                br
+                .subtitle Alan Walker
+            .player
+                .icon
+                    i.bi.bi-skip-start-fill
+                    i.bi.bi-play-fill
+                    i.bi.bi-skip-end-fill
+                .player_duration
+                    span#current_start 00:00
+                    .bar
+                        input#seek(type='range' min='0' value='0' max='100')
+                        #bar2.bar2
+                        .dot
+                    span#current_end 00:00
+            .vol
+                i.bi.bi-volume-down-fill
+                input#seek(type='range' min='0' value='0' max='100')
+                .vol_bar
+                #vol_dot.dot

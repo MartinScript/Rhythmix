@@ -6,8 +6,8 @@ const trackSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Track must have a title']
     },
-    duration: {
-        type: String,
+    trackDuration: {
+        type: Number,
     },
     uploadedAt: {
         type: Date,
@@ -42,18 +42,19 @@ const trackSchema = new mongoose.Schema({
     }
 );
 
-trackSchema.pre('save', function (next) {
-    this.slug = slugify(this.title, { lower: true });
-    next();
-});
+// trackSchema.pre('save', function (next) {
+//     this.slug = slugify(`${this.title}-${this.artiste.username}`, { lower: true });
+//     next();
+// });
 
-trackSchema.index({ artiste: 1, audioFile: 1 }, {
-    unique: true
-});
+// trackSchema.index({ artiste: 1, audioFile: 1 }, {
+//     unique: true
+// });
 
 trackSchema.pre(/^find/, async function (next) {
     this.populate({
-        path: 'features'
+        path: 'artiste',
+        select: 'username photo'
     })
     next();
 });
